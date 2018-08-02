@@ -247,7 +247,9 @@ MonoBehaviour:
   BrainCloudLogo: {fileID: 2800000, guid: e49845c522a75eb4ab3f5174918e57ac, type: 3}
   Password: 
   Spinner: {fileID: 114643523159769370}
-  Username: 
+  UniversalId: 
+  LoginPrefab: {fileID: 1859823862763404, guid: 09fd0d40e0e624cb7bdd2d29cf6e8881,
+    type: 2}
 --- !u!114 &114643523159769370
 MonoBehaviour:
   m_ObjectHideFlags: 1

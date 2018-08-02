@@ -19,22 +19,29 @@ public class Login : GameScene
 
     public string UniversalId;
 
+    public GameObject LoginPrefab;
+
     // Use this for initialization
     private void Start()
     {
+       // GameObject.Instantiate(LoginPrefab);
+        
+        
         gameObject.transform.parent.gameObject.GetComponentInChildren<Camera>().rect = App.ViewportRect;
 
     }
 
     private void OnGUI()
     {
-        GUILayout.Window(App.WindowId, new Rect(Screen.width / 2 - 125 + App.Offset, Screen.height / 2 - 100, 250, 200),
-            OnWindow,
-            "brainCloud Login");
+     //   GUILayout.Window(App.WindowId, new Rect(Screen.width / 2 - 125 + App.Offset, Screen.height / 2 - 100, 250, 200),
+     //       OnWindow,
+     //       "brainCloud Login");
     }
 
     private void OnWindow(int windowId)
     {
+        
+    
         GUILayout.FlexibleSpace();
         GUILayout.BeginHorizontal();
         GUILayout.FlexibleSpace();
@@ -45,7 +52,7 @@ public class Login : GameScene
 
         GUI.enabled = !_isConnecting;
 
-        LoginUI();
+        //LoginUI();
 
         GUI.enabled = true;
 
